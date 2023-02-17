@@ -1,20 +1,23 @@
 <template>
   <v-app id="home">
-    <NavBar/>
+    <NavBar />
     <v-container fluid>
-      
+
     </v-container>
   </v-app>
 </template>
 
 <script>
-// @ is an alias to /src
-import NavBar from '@/components/NavBar.vue'
+import { defineComponent } from 'vue';
 
-export default {
+// Components
+import NavBar from '@/components/NavBar.vue';
+
+export default defineComponent({
   name: 'HomeView',
+
   components: {
-    NavBar
-  }
-}
+    NavBar,
+  },
+});
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div></div>
+    <v-app-bar app color="black" dark flat class="px-12"></v-app-bar>
 </template>
 
 <script>
