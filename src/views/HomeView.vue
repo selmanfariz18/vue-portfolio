@@ -37,6 +37,18 @@
               <div style="width:120px">
               <v-slider v-model="slider2" color="red" :label="track-color"></v-slider>
               </div>
+              <h4 class="mt-n4">I am a Vue developer</h4>
+              <h4>and Python programmer</h4>
+              <p class="text-grey">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, reiciendis? Aspernatur, nobis provident. Nulla aspernatur at similique repellat! Unde fugiat ipsum quod aliquid, dolores quibusdam nihil sit molestias quasi. Non?
+              </p>
+              <br/>
+              <p class="text-grey">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, reiciendis? Aspernatur, nobis provident. Nulla aspernatur at similique repellat! Unde fugiat ipsum quod aliquid, dolores quibusdam nihil sit molestias quasi. Non?
+              </p>
+              <v-btn tile dark color="red" class="mt-4">
+                Download Resume
+              </v-btn>
             </v-col>
           </v-row>
         </div>
