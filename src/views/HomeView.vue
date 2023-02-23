@@ -66,10 +66,56 @@
               <div class="child">
                 <v-btn icon="fas fa-laptop" color="#e81e5b" class="text-white"></v-btn>
                 <h3 class="ml-3 mt-4">Websites</h3>
+                <p class="text-grey ml-3 mt-4 text-caption">
+                  Lorem ipsum dolor sit amet consectetur<br/>
+                  Lorem ipsum dolor sit amet consectetur<br/>
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
+              </div>
+              <div class="child">
+                <v-btn icon="fas fa-mobile-alt" color="#e81e5b" class="text-white"></v-btn>
+                <h3 class="ml-3 mt-4">Websites</h3>
+                <p class="text-grey ml-3 mt-4 text-caption">
+                  Lorem ipsum dolor sit amet consectetur<br/>
+                  Lorem ipsum dolor sit amet consectetur<br/>
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
+              </div>
+              <div class="child">
+                <v-btn icon="fas fa-calculator" color="#e81e5b" class="text-white"></v-btn>
+                <h3 class="ml-3 mt-4">Websites</h3>
+                <p class="text-grey ml-3 mt-4 text-caption">
+                  Lorem ipsum dolor sit amet consectetur<br/>
+                  Lorem ipsum dolor sit amet consectetur<br/>
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
               </div>
             </v-col>
           </v-row>
+          <v-divider></v-divider>
         </div>
+      </v-col>
+      <v-col cols="12" sm="12" id="services">
+        <div class="d-flex justify-center mb-6">
+          <v-btn color="#e81e5b" class="mr-2">All</v-btn>
+          <v-btn class="mr-2" variant="tonal">Websites</v-btn>
+          <v-btn class="mr-2" variant="tonal">git</v-btn>
+          <v-btn class="mr-2" variant="tonal">Works</v-btn>
+          <v-btn variant="tonal">Illustration</v-btn>
+        </div>
+      </v-col>
+      <v-col cols="12" class="imgHover">
+        <v-row class="fill-height" align="center" justify="center">
+          <template v-for="(item,i) in items" :key="i">
+            <v-col cols="12" md="4">
+              <v-hover v-slot="{isHovering, props}">
+                <v-card :elevation="isHovering ? 12: 2" :class="{'on-hover':isHovering}" v-bind="props">
+                  <v-img :src="item.img" height="225px" cover></v-img>
+                </v-card>
+              </v-hover>
+            </v-col>
+          </template>
+        </v-row>
       </v-col>
     </v-container>
   </v-app>
@@ -88,22 +134,22 @@ export default defineComponent({
       slider2:50,
       items:[
         {
-          img:"../../public/mine1.png",
+          img:"i3.jpg",
         },
         {
-          img:"../../public/mine2.png",
+          img:"i4.jpg",
         },
         {
-          img:"../../public/mine3.png",
+          img:"i5.jpg",
         },
         {
-          img:"../../public/mine3.png",
+          img:"i6.jpeg",
         },
         {
-          img:"../../public/mine4.png",
+          img:"i8.jpg",
         },
         {
-          img:"../../public/mine5.png",
+          img:"i9.jpg",
         },
       ],
     };
