@@ -117,6 +117,56 @@
           </template>
         </v-row>
       </v-col>
+      <v-col cols="12" sm="12">
+        <div class="d-flex justify-center mb-6">
+          <v-btn color="#e81e5b" class="mt-4">Load more</v-btn>
+        </div>
+      </v-col>
+      <v-col cols="12" id="page">
+        <div class="pre">
+          <v-row>
+            <v-col cols="12" sm="4">
+              <v-card class="mw-auto" max-width="344" height="">
+                <v-img src="i9.jpg" height="200px" cover></v-img>
+                <v-card-title>We provide best</v-card-title>
+                <v-card-subtitle>
+                  By Selman | by git
+                </v-card-subtitle>
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, obcaecati eum? Consequatur non pariatur hic.
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="12" sm="4">
+              <v-card class="mw-auto" max-width="344" height="">
+                <v-img src="i9.jpg" height="200px" cover></v-img>
+                <v-card-title>We provide best</v-card-title>
+                <v-card-subtitle>
+                  By Selman | by git
+                </v-card-subtitle>
+                <v-card-text>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, obcaecati eum? Consequatur non pariatur hic.
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </div>
+      </v-col>
+      <v-col cols="12" id="blog">
+        <div class="hire">
+          <v-row>
+            <v-col cols="12" sm="8">
+              <h1 class="mt-9">Hire me</h1>
+              <p class="text-grey">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, obcaecati eum? Consequatur non pariatur hic.
+              </p>
+            </v-col>
+            <v-col cols="12" sm="4">
+              <v-btn color="#e81e5b" class="mt-15">Hire me</v-btn>
+            </v-col>
+          </v-row>
+        </div>
+      </v-col>
     </v-container>
   </v-app>
 </template>
