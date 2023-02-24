@@ -167,6 +167,13 @@
           </v-row>
         </div>
       </v-col>
+      <v-col cols="12" sm="4">
+        <div class="child">
+          <h1>Contact</h1>
+          <v-btn icon="fas fa-map-marker-alt" class="mt-10" variant="outlined"></v-btn>
+          <span class="text-caption"></span>
+        </div>
+      </v-col>
     </v-container>
   </v-app>
 </template>
