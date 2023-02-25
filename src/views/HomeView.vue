@@ -53,13 +53,16 @@
           </v-row>
         </div>
       </v-col>
-      <div class="text-center mt-4">
+      <br/>
+      <v-divider></v-divider>
+      <br/><br/>
+      <div class="text-center mt-4" id="Projects">
         <h2>My projects</h2>
         <div style="width:120px; margin:0 auto">
           <v-slider v-model="slider2" color="red" :label="track-color"></v-slider>
         </div>
       </div>
-      <v-col cols="12" class="padd" id="projects">
+      <v-col cols="12" class="padd">
         <div class="first" id="project">
           <v-row>
             <v-col cols="12">
@@ -167,14 +170,42 @@
           </v-row>
         </div>
       </v-col>
+      <v-col>
+      <v-row>
       <v-col cols="12" sm="4">
         <div class="child">
           <h1>Contact</h1>
-          <v-btn icon="fas fa-map-marker-alt" class="mt-10" variant="outlined"></v-btn>
-          <span class="text-caption"></span>
+          <v-btn icon="fas fa-map-marker-alt" class="mt-10" variant="outlined"></v-btn><br/>
+          <span class="text-caption">Your street ,your area</span><br/>
+          <v-btn icon="fas fa-phone-alt" class="mt-10" variant="outlined"></v-btn><br/>
+          <span class="text-caption">001234567890</span><br/>
+          <span class="text-caption">001234567890</span><br/>
+          <v-btn icon="fas fa-envelope" class="mt-10" variant="outlined"></v-btn><br/>
+          <span class="text-caption">salmanulfarizyka@gmail.com</span><br/>
+          <span class="text-caption">selmanfariz18@gmail.com</span><br/>
         </div>
       </v-col>
+      <v-col cols="12" sm="8">
+        <h1 class="mt-8">Message Me</h1>
+        <v-divider></v-divider>
+        <span class="text-caption">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. At impedit voluptates numquam, recusandae facere accusamus ut possimus autem molestiae illum voluptatem esse ipsa doloribus molestias dolore nisi. Distinctio, voluptas accusamus.
+        </span>
+        <v-row class="mt-10">
+          <v-col cols="12" sm="6">
+            <v-text-field label="Name" persistent-hint variant="outlined"></v-text-field>            
+          </v-col>
+          <v-col cols="12" sm="6">
+            <v-text-field label="Phone" persistent-hint variant="outlined"></v-text-field>            
+          </v-col>
+        </v-row>
+        <v-textarea label="Message" persistent-hint variant="outlined"></v-textarea>
+        <v-btn color="#e81e5b" class="mt-2">Submit</v-btn>
+      </v-col>
+    </v-row>
+    </v-col>
     </v-container>
+    <FooterView/>
   </v-app>
 </template>
 
@@ -183,6 +214,7 @@ import { defineComponent } from 'vue';
 
 // Components
 import NavBar from '@/components/NavBar.vue';
+import FooterView from '@/components/FooterView.vue';
 
 export default defineComponent({
   name: 'HomeView',
@@ -214,6 +246,7 @@ export default defineComponent({
 
   components: {
     NavBar,
+    FooterView,
   },
 });
 </script>
